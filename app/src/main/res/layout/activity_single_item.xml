@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/urgencylabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urgency: " />
+
+    <TextView
+        android:id="@+id/urgency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/urgencylabel" />
+
+    <TextView
+        android:id="@+id/itemlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urgencylabel"
+        android:text="To Do Item: " />
+
+    <TextView
+        android:id="@+id/todoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urgency"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/itemlabel" />
+
+    <TextView
+        android:id="@+id/descriplabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemlabel"
+        android:text="Description: " />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/todoItem"
+        android:layout_toRightOf="@+id/descriplabel" />
+
+    <CheckBox
+        android:id="@+id/cbDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:text="Done" />
+
+
+</RelativeLayout>
